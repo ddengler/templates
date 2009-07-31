@@ -2,6 +2,8 @@
 
 My templates for starting a new Rails application
 
+* base : base template for other templates
+
 --
 
 Copyright (c) 2009 Daniel Dengler

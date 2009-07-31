@@ -12,6 +12,10 @@ if yes?("Use haml? (yn)")
   run "haml --rails ."
 end
 
+if yes?("Use jrails? (yn)")
+  plugin 'git://github.com/ddengler/jrails.git'
+end
+
 git :init
 
 file "spec/spec_helper.rb", <<-SP

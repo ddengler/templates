@@ -12,11 +12,11 @@ if yes?("Use haml? (yn)")
   run "haml --rails ."
 end
 
-if yes?("Use jrails? (yn)")
-  plugin 'git://github.com/ddengler/jrails.git'
-end
-
 git :init
+
+if yes?("Use jrails? (yn)")
+  plugin :jrails, :git => 'git://github.com/ddengler/jrails.git', :submodule => true
+end
 
 file "spec/spec_helper.rb", <<-SP
 require 'rubygems'

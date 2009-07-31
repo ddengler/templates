@@ -67,9 +67,10 @@ doc/app
 db/*.sqlite3
 .autotest
 END
- 
-git :add => ".", :commit => "-m 'initial commit'"
 
 run "rm public/index.html"
 run "rm public/favicon.ico"
 run "rm public/images/rails.png"
+ 
+git :add => ".", :commit => "-m 'initial commit'"
+

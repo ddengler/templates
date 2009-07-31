@@ -68,5 +68,3 @@ git :add => ".", :commit => "-m 'initial commit'"
 run "rm public/index.html"
 run "rm public/favicon.ico"
 run "rm public/images/rails.png"
-
-puts "require 'shoulda' in test_helper.rb !"

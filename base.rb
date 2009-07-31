@@ -16,6 +16,7 @@ git :init
 
 if yes?("Use jrails? (yn)")
   plugin :jrails, :git => 'git://github.com/ddengler/jrails.git', :submodule => true
+  rake 'jrails:install:javascripts'
 end
 
 file "spec/spec_helper.rb", <<-SP

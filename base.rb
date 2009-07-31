@@ -7,6 +7,11 @@ generate :rspec
 
 gem 'thoughtbot-shoulda', :lib => false, :source => 'http://gems.github.com'
 
+if yes?("Use haml? (yn)")
+  gem 'haml'
+  run "haml --rails ."
+end
+
 git :init
 
 file "spec/spec_helper.rb", <<-SP

@@ -9,7 +9,7 @@ gem 'thoughtbot-shoulda', :lib => false, :source => 'http://gems.github.com'
 
 git :init
 
-file "spec/spec_helper.rb" <<-SP
+file "spec/spec_helper.rb", <<-SP
 require 'rubygems'
 require 'spork'
 
@@ -41,7 +41,7 @@ Spork.each_run do
 end
 SP
 
-file "spec/spec.opts" <<-SP
+file "spec/spec.opts", <<-SP
 --drb
 --format progress
 --loadby mtime
